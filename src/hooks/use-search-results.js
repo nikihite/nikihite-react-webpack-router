@@ -33,7 +33,7 @@ export default function useSearchResults() {
       setSearchResults(body.results);
     } catch (e) {
       setError('Error searching pokedex ' + e.body.toString());
-    }
+    }  
   };
   useEffect(() => void searchPokedex(usableSearchParams), []);
 
